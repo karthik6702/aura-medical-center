@@ -1,0 +1,52 @@
+.doctors-page {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  background-color: #050505;
+}
+
+.doctor-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.filter-pill-btn {
+  padding: 0.65rem 1.4rem;
+  border-radius: 50px;
+  background: rgba(17, 17, 17, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #B5B5B5;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-pill-btn.active,
+.filter-pill-btn:hover {
+  background: rgba(214, 179, 106, 0.15);
+  border-color: #D6B36A;
+  color: #D6B36A;
+}
+
+.doctor-detail-full-card {
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: #0E0E0E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .doctor-detail-full-card {
+    grid-template-columns: 1fr;
+  }
+}

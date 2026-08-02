@@ -1,0 +1,175 @@
+.patient-exp-section {
+  padding: 8rem 0;
+  background-color: #0E0E0E;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.testimonial-stage {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-glass-card {
+  position: relative;
+  padding: 3.5rem 3rem;
+  border-radius: 24px;
+  background: rgba(17, 17, 17, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .testimonial-glass-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.quote-icon-large {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  opacity: 0.15;
+  color: #D6B36A;
+  pointer-events: none;
+}
+
+.testimonial-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.star-gold {
+  color: #D6B36A;
+  fill: #D6B36A;
+}
+
+.testimonial-quote-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #FFFFFF;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial-quote-text {
+    font-size: 1.1rem;
+  }
+}
+
+.testimonial-author-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 640px) {
+  .testimonial-author-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.author-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(214, 179, 106, 0.5);
+}
+
+.author-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.author-role {
+  font-size: 0.825rem;
+  color: #B5B5B5;
+}
+
+.procedure-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  background: rgba(214, 179, 106, 0.1);
+  border: 1px solid rgba(214, 179, 106, 0.3);
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #D6B36A;
+}
+
+/* Controls */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.control-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+  background: rgba(214, 179, 106, 0.15);
+  border-color: #D6B36A;
+  color: #D6B36A;
+  transform: scale(1.05);
+}
+
+.dots-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 24px;
+  border-radius: 10px;
+  background: #D6B36A;
+}

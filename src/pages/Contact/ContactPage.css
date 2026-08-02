@@ -1,0 +1,52 @@
+.contact-page {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  background-color: #050505;
+}
+
+.contact-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 992px) {
+  .contact-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.contact-card-box {
+  padding: 3rem;
+  border-radius: 24px;
+  background: #0E0E0E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 640px) {
+  .contact-card-box {
+    padding: 2rem 1.25rem;
+  }
+}
+
+.contact-info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: rgba(214, 179, 106, 0.12);
+  border: 1px solid rgba(214, 179, 106, 0.3);
+  color: #D6B36A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

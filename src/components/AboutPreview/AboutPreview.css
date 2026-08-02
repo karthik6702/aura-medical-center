@@ -1,0 +1,132 @@
+.about-preview-section {
+  padding: 8rem 0;
+  background-color: #050505;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.about-image-stage {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.about-main-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  filter: contrast(1.08) brightness(0.9);
+}
+
+.about-floating-badge {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(214, 179, 106, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.badge-icon-shield {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(214, 179, 106, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D6B36A;
+  flex-shrink: 0;
+}
+
+.badge-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.badge-sub {
+  font-size: 0.8rem;
+  color: #B5B5B5;
+}
+
+/* Right Content */
+.about-content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text-lead {
+  font-size: 1.1rem;
+  color: #F5F5F5;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-text-body {
+  font-size: 0.975rem;
+  color: #B5B5B5;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.about-feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .about-feature-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.feat-icon-gold {
+  color: #D6B36A;
+  margin-top: 0.2rem;
+}
+
+.feat-item-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.2rem;
+}
+
+.feat-item-desc {
+  font-size: 0.8rem;
+  color: #B5B5B5;
+}

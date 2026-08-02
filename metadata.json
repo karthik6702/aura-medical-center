@@ -1,0 +1,6 @@
+{
+  "name": "AURA Medical Center",
+  "description": "World-Class Ultra-Luxury Private Hospital & Medical Institute",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
